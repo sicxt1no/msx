@@ -518,3 +518,5 @@ Available: [Lnet/minecraft/world/item/ItemStack;, Lnet/minecraft/world/phys/Bloc
 [29Nov2024 02:31:03.177] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
 [29Nov2024 02:31:03.177] [Server thread/INFO] [Arclight/]: Forwarding forge permission[forge:default_handler] to bukkit
 [29Nov2024 02:31:06.342] [Server thread/INFO] [com.github.alexthe666.alexsmobs.AlexsMobs/]: Found Pupfish chunk at 687 ~ 1152 after 38 tries
+[29Nov2024 02:43:50.554] [User Authenticator #1/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: UUID of player Sicxtino is b202b854-eef7-3a5c-8add-c7111e30f7a1
+[29Nov2024 02:43:51.936] [Server thread/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: com.mojang.authlib.GameProfile@607b794a[id=b202b854-eef7-3a5c-8add-c7111e30f7a1,name=Sicxtino,properties={},legacy=false] (/127.171.113.235:34769) lost connection: Disconnected
