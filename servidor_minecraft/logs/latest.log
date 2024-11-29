@@ -520,3 +520,14 @@ Available: [Lnet/minecraft/world/item/ItemStack;, Lnet/minecraft/world/phys/Bloc
 [29Nov2024 02:31:06.342] [Server thread/INFO] [com.github.alexthe666.alexsmobs.AlexsMobs/]: Found Pupfish chunk at 687 ~ 1152 after 38 tries
 [29Nov2024 02:43:50.554] [User Authenticator #1/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: UUID of player Sicxtino is b202b854-eef7-3a5c-8add-c7111e30f7a1
 [29Nov2024 02:43:51.936] [Server thread/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: com.mojang.authlib.GameProfile@607b794a[id=b202b854-eef7-3a5c-8add-c7111e30f7a1,name=Sicxtino,properties={},legacy=false] (/127.171.113.235:34769) lost connection: Disconnected
+[29Nov2024 02:50:37.533] [User Authenticator #2/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: UUID of player Sicxtino is b202b854-eef7-3a5c-8add-c7111e30f7a1
+[29Nov2024 02:50:40.940] [Server thread/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class net.minecraft.world.entity.player.Player from class tschipp.carryon.common.carry.CarryOnDataManager
+[29Nov2024 02:50:40.991] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Sicxtino[/127.171.113.235:48535] logged in with entity id 604 at (-6.5, 67.0, -0.5)
+[29Nov2024 02:50:41.049] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Sicxtino joined the game
+[29Nov2024 02:50:51.587] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Sicxtino lost connection: Disconnected
+[29Nov2024 02:50:51.605] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Sicxtino left the game
+[29Nov2024 02:53:34.148] [User Authenticator #3/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: UUID of player Sicxtino is b202b854-eef7-3a5c-8add-c7111e30f7a1
+[29Nov2024 02:53:38.046] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Sicxtino[/127.171.113.235:53963] logged in with entity id 763 at (-7.603659517180012, 68.0, 0.3578129935606723)
+[29Nov2024 02:53:38.056] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Sicxtino joined the game
+[29Nov2024 02:54:25.585] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Sicxtino lost connection: Disconnected
+[29Nov2024 02:54:25.588] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Sicxtino left the game
