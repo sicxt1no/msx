@@ -1,533 +1,59 @@
-[29Nov2024 02:29:26.783] [main/INFO] [Arclight/]: 
-
-       ___           ___     __   /\
-      /   | ________/ (_)__ / /  / /
-     / /| |/ __/ __/ / / _ / _ \/__/
-    / ___ / / / /_/ / / / / // / /
-   /_/  |/_/  \__/_/_/\_ /_//_/ /
-                     /__/     \/
-
-    运行版本 顿顽 / arclight-1.20.1-1.0.5-1a8925b
-    构建日期 2024-02-28 14:51:40
-
-[29Nov2024 02:29:26.832] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, arclightserver, --fml.forgeVersion, 47.2.20, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, nogui]
-[29Nov2024 02:29:26.834] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.13 by Ubuntu; OS Linux arch amd64 version 6.5.0-1025-azure
-[29Nov2024 02:29:27.231] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is arclightserver
-[29Nov2024 02:29:27.280] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/workspaces/msx/servidor_minecraft/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2399!/ Service=ModLauncher Env=SERVER
-[29Nov2024 02:29:27.542] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/msx/servidor_minecraft/libraries/net/minecraftforge/fmlcore/1.20.1-47.2.20/fmlcore-1.20.1-47.2.20.jar is missing mods.toml file
-[29Nov2024 02:29:27.543] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/msx/servidor_minecraft/libraries/net/minecraftforge/javafmllanguage/1.20.1-47.2.20/javafmllanguage-1.20.1-47.2.20.jar is missing mods.toml file
-[29Nov2024 02:29:27.544] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/msx/servidor_minecraft/libraries/net/minecraftforge/lowcodelanguage/1.20.1-47.2.20/lowcodelanguage-1.20.1-47.2.20.jar is missing mods.toml file
-[29Nov2024 02:29:27.545] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/msx/servidor_minecraft/libraries/net/minecraftforge/mclanguage/1.20.1-47.2.20/mclanguage-1.20.1-47.2.20.jar is missing mods.toml file
-[29Nov2024 02:29:27.650] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
-[29Nov2024 02:29:29.554] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
-[29Nov2024 02:29:29.650] [main/INFO] [mixin/]: Successfully loaded Mixin Connector [io.izzel.arclight.common.mod.ArclightConnector]
-[29Nov2024 02:29:29.693] [main/INFO] [Arclight/]: 核心 Mixin 配置已加载
-[29Nov2024 02:29:29.697] [main/INFO] [Arclight/]: 服务端优化 Mixin 配置已加载
-[29Nov2024 02:29:29.705] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'arclightserver' with arguments [nogui]
-[29Nov2024 02:29:35.882] [main/WARN] [mixin/]: Static binding violation: PRIVATE @Overwrite method m_150430_ in mixins.arclight.core.json:world.inventory.AbstractContainerMenuMixin cannot reduce visibiliy of PROTECTED target method, visibility will be upgraded.
-[29Nov2024 02:29:37.302] [main/WARN] [mixin/]: Injection warning: LVT in net/minecraft/world/item/BoatItem::m_7203_(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResultHolder; has incompatible changes at opcode 158 in callback securitycraft.mixins.json:boat.BoatItemMixin->@Inject::securitycraft$maybeSetSecuritySeaBoatOwner(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/phys/HitResult;Lnet/minecraft/world/phys/Vec3;DLjava/util/List;Lnet/minecraft/world/entity/vehicle/Boat;)V.
- Expected: [Lnet/minecraft/world/item/ItemStack;, Lnet/minecraft/world/phys/HitResult;, Lnet/minecraft/world/phys/Vec3;, D, Ljava/util/List;, Lnet/minecraft/world/entity/vehicle/Boat;]
-    Found: [Lnet/minecraft/world/item/ItemStack;, Lnet/minecraft/world/phys/BlockHitResult;, Lnet/minecraft/world/phys/Vec3;, D, Ljava/util/List;, Lnet/minecraft/world/entity/vehicle/Boat;]
-Available: [Lnet/minecraft/world/item/ItemStack;, Lnet/minecraft/world/phys/BlockHitResult;, Lnet/minecraft/world/phys/Vec3;, D, Ljava/util/List;, Lnet/minecraft/world/entity/vehicle/Boat;, Ljava/util/Iterator;, Lnet/minecraft/world/entity/Entity;, Lnet/minecraft/world/phys/AABB;]
-[29Nov2024 02:29:40.318] [main/WARN] [mixin/]: Mixin alexscaves.mixins.json:SwampHutPieceMixin has multiple constructors, (Lnet/minecraft/world/level/levelgen/structure/pieces/StructurePieceType;IIIIIILnet/minecraft/core/Direction;)V was selected
-
-[29Nov2024 02:29:40.919] [modloading-worker-0/INFO] [Arclight/]: Arclight Mod 已加载
-[29Nov2024 02:29:40.990] [modloading-worker-0/INFO] [Arclight/]: Arclight 事件系统已注册
-[29Nov2024 02:29:41.109] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.2.20, for MC 1.20.1 with MCP 20230612.114412
-[29Nov2024 02:29:41.110] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.2.20 Initialized
-[29Nov2024 02:29:44.421] [main/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.github.alexmodguy.alexscaves.server.entity.living.TremorzillaEntity from class com.github.alexmodguy.alexscaves.server.entity.living.LicowitchEntity
-[29Nov2024 02:29:44.604] [modloading-worker-0/INFO] [com.github.nyuppo.MoreMobVariants/]: Giving mobs a fresh coat of paint...
-[29Nov2024 02:29:44.912] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [tombstone] Starting version check at https://raw.githubusercontent.com/Corail31/tombstone_lite/master/update.json
-[29Nov2024 02:29:45.144] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [tombstone] Found status: UP_TO_DATE Current: 8.8.6 Target: null
-[29Nov2024 02:29:45.145] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
-[29Nov2024 02:29:45.188] [main/INFO] [com.tiviacz.travelersbackpack.TravelersBackpack/]: Registered the FluidEffect with Unique ID of minecraft:water for Water (Fluid Amount Required: 1000) with the ID 0
-[29Nov2024 02:29:45.188] [main/INFO] [com.tiviacz.travelersbackpack.TravelersBackpack/]: Registered the FluidEffect with Unique ID of minecraft:lava for Lava (Fluid Amount Required: 1000) with the ID 1
-[29Nov2024 02:29:45.188] [main/INFO] [com.tiviacz.travelersbackpack.TravelersBackpack/]: Registered the FluidEffect with Unique ID of travelersbackpack:potion for Uncraftable Potion (Fluid Amount Required: 250) with the ID 2
-[29Nov2024 02:29:45.188] [main/INFO] [com.tiviacz.travelersbackpack.TravelersBackpack/]: Registered the FluidEffect with Unique ID of minecraft:milk for Milk (Fluid Amount Required: 1000) with the ID 3
-[29Nov2024 02:29:45.272] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 47.2.20 Target: 47.3.0
-[29Nov2024 02:29:45.272] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [easy_villagers] Starting version check at https://maxhenkel.de/update/easy_villagers.json
-[29Nov2024 02:29:46.195] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [easy_villagers] Found status: UP_TO_DATE Current: 1.20.1-1.0.17 Target: null
-[29Nov2024 02:29:46.195] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [securitycraft] Starting version check at https://www.github.com/Geforce132/SecurityCraft/raw/master/Updates/Forge.json
-[29Nov2024 02:29:46.319] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [securitycraft] Found status: OUTDATED Current: 1.9.10 Target: 1.9.11
-[29Nov2024 02:29:46.319] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [travelersbackpack] Starting version check at https://gist.githubusercontent.com/Tiviacz1337/906937677aa472285dff9d6c2a189d5e/raw
-[29Nov2024 02:29:46.387] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [travelersbackpack] Found status: OUTDATED Current: 9.1.14 Target: 9.1.16
-[29Nov2024 02:29:47.726] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[29Nov2024 02:29:47.832] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/workspaces/msx/servidor_minecraft/libraries/net/minecraft/server/1.20.1-20230612.114412/server-1.20.1-20230612.114412-srg.jar%23199!/assets/.mcassetsroot' uses unexpected schema
-[29Nov2024 02:29:47.832] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/workspaces/msx/servidor_minecraft/libraries/net/minecraft/server/1.20.1-20230612.114412/server-1.20.1-20230612.114412-srg.jar%23199!/data/.mcassetsroot' uses unexpected schema
-[29Nov2024 02:29:49.466] [main/WARN] [net.minecraft.server.dedicated.DedicatedServerProperties/]: Failed to parse level-type minecraft:terralith, defaulting to minecraft:normal
-[29Nov2024 02:29:49.896] [main/INFO] [com.github.alexthe666.alexsmobs.AlexsMobs/]: Adding datapack listener capsid_recipes
-[29Nov2024 02:29:51.199] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 8 recipes
-[29Nov2024 02:29:51.377] [main/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 2764 advancements
-[29Nov2024 02:29:51.382] [main/INFO] [com.github.nyuppo.MoreMobVariants/]: Reloading config...
-[29Nov2024 02:29:52.731] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.20.1
-[29Nov2024 02:29:52.731] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
-[29Nov2024 02:29:52.731] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
-[29Nov2024 02:29:52.731] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[29Nov2024 02:29:52.942] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on *:25565
-[29Nov2024 02:29:52.967] [Server thread/INFO] [net.minecraft.server.network.ServerConnectionListener/]: Using epoll channel type
-[29Nov2024 02:29:53.057] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[29Nov2024 02:29:53.057] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: The server will make no attempt to authenticate usernames. Beware.
-[29Nov2024 02:29:53.057] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[29Nov2024 02:29:53.057] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: To change this, set "online-mode" to "true" in the server.properties file.
-[29Nov2024 02:29:53.298] [Server thread/INFO] [Minecraft/]: This server is running Arclight version arclight-1.20.1-1.0.5-1a8925b (MC: 1.20.1) (Implementing API version 1.20.1-R0.1-SNAPSHOT)
-[29Nov2024 02:29:54.028] [Server thread/INFO] [Arclight/]: 正在向 Bukkit 注册 ...
-[29Nov2024 02:29:54.347] [Server thread/INFO] [Arclight/]: 注册了 1796 个材料，其中 1109 个方块 687 个物品
-[29Nov2024 02:29:54.352] [Server thread/INFO] [Arclight/]: 注册了 47 个新的药水效果
-[29Nov2024 02:29:54.366] [Server thread/INFO] [Arclight/]: 注册了 102 个新的附魔
-[29Nov2024 02:29:54.397] [Server thread/INFO] [Arclight/]: 注册了 210 个新的生物类型
-[29Nov2024 02:29:54.398] [Server thread/INFO] [Arclight/]: 注册了 0 个新的村民职业
-[29Nov2024 02:29:54.413] [Server thread/INFO] [Arclight/]: 注册了 114 个新的生物群系
-[29Nov2024 02:29:54.494] [Server thread/INFO] [Minecraft/]: Using 4 threads for Netty based IO
-[29Nov2024 02:29:54.495] [Server thread/INFO] [STDOUT/]: Server Ping Player Sample Count: 12
-[29Nov2024 02:29:54.495] [Server thread/INFO] [Minecraft/]: Debug logging is enabled
-[29Nov2024 02:29:54.621] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file ./world/serverconfig/sophisticatedbackpacks-server.toml is not correct. Correcting
-[29Nov2024 02:29:54.621] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.disallowedItems was corrected from null to its default, []. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.containerItemsDisallowed was corrected from null to its default, false. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.noInteractionBlocks was corrected from null to its default, []. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.noConnectionBlocks was corrected from null to its default, []. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.leatherBackpack was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.leatherBackpack.inventorySlotCount was corrected from null to its default, 27. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.leatherBackpack.upgradeSlotCount was corrected from null to its default, 1. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.copperBackpack was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.copperBackpack.inventorySlotCount was corrected from null to its default, 45. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.copperBackpack.upgradeSlotCount was corrected from null to its default, 1. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.ironBackpack was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.ironBackpack.inventorySlotCount was corrected from null to its default, 54. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.ironBackpack.upgradeSlotCount was corrected from null to its default, 2. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.goldBackpack was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.goldBackpack.inventorySlotCount was corrected from null to its default, 81. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.goldBackpack.upgradeSlotCount was corrected from null to its default, 3. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.diamondBackpack was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.diamondBackpack.inventorySlotCount was corrected from null to its default, 108. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.diamondBackpack.upgradeSlotCount was corrected from null to its default, 5. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.netheriteBackpack was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.netheriteBackpack.inventorySlotCount was corrected from null to its default, 120. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.netheriteBackpack.upgradeSlotCount was corrected from null to its default, 7. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.compactingUpgrade was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.compactingUpgrade.filterSlots was corrected from null to its default, 9. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.compactingUpgrade.slotsInRow was corrected from null to its default, 3. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advancedCompactingUpgrade was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advancedCompactingUpgrade.filterSlots was corrected from null to its default, 16. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advancedCompactingUpgrade.slotsInRow was corrected from null to its default, 4. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.depositUpgrade was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.depositUpgrade.filterSlots was corrected from null to its default, 9. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.depositUpgrade.slotsInRow was corrected from null to its default, 3. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advancedDepositUpgrade was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advancedDepositUpgrade.filterSlots was corrected from null to its default, 16. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advancedDepositUpgrade.slotsInRow was corrected from null to its default, 4. 
-[29Nov2024 02:29:54.622] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.feedingUpgrade was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.feedingUpgrade.filterSlots was corrected from null to its default, 9. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.feedingUpgrade.slotsInRow was corrected from null to its default, 3. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advancedFeedingUpgrade was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advancedFeedingUpgrade.filterSlots was corrected from null to its default, 16. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advancedFeedingUpgrade.slotsInRow was corrected from null to its default, 4. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.filterUpgrade was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.filterUpgrade.filterSlots was corrected from null to its default, 9. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.filterUpgrade.slotsInRow was corrected from null to its default, 3. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advancedFilterUpgrade was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advancedFilterUpgrade.filterSlots was corrected from null to its default, 16. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advancedFilterUpgrade.slotsInRow was corrected from null to its default, 4. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.magnetUpgrade was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.magnetUpgrade.filterSlots was corrected from null to its default, 9. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.magnetUpgrade.slotsInRow was corrected from null to its default, 3. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.magnetUpgrade.magnetRange was corrected from null to its default, 3. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advancedMagnetUpgrade was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advancedMagnetUpgrade.filterSlots was corrected from null to its default, 16. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advancedMagnetUpgrade.slotsInRow was corrected from null to its default, 4. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advancedMagnetUpgrade.magnetRange was corrected from null to its default, 5. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.pickupUpgrade was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.pickupUpgrade.filterSlots was corrected from null to its default, 9. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.pickupUpgrade.slotsInRow was corrected from null to its default, 3. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advancedPickupUpgrade was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advancedPickupUpgrade.filterSlots was corrected from null to its default, 16. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advancedPickupUpgrade.slotsInRow was corrected from null to its default, 4. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.refillUpgrade was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.refillUpgrade.filterSlots was corrected from null to its default, 6. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.refillUpgrade.slotsInRow was corrected from null to its default, 3. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advancedRefillUpgrade was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advancedRefillUpgrade.filterSlots was corrected from null to its default, 12. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advancedRefillUpgrade.slotsInRow was corrected from null to its default, 4. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.restockUpgrade was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.restockUpgrade.filterSlots was corrected from null to its default, 9. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.restockUpgrade.slotsInRow was corrected from null to its default, 3. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advancedRestockUpgrade was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advancedRestockUpgrade.filterSlots was corrected from null to its default, 16. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advancedRestockUpgrade.slotsInRow was corrected from null to its default, 4. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.voidUpgrade was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.voidUpgrade.filterSlots was corrected from null to its default, 9. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.voidUpgrade.slotsInRow was corrected from null to its default, 3. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.voidUpgrade.voidAnythingEnabled was corrected from null to its default, true. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advancedVoidUpgrade was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advancedVoidUpgrade.filterSlots was corrected from null to its default, 16. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advancedVoidUpgrade.slotsInRow was corrected from null to its default, 4. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advancedVoidUpgrade.voidAnythingEnabled was corrected from null to its default, true. 
-[29Nov2024 02:29:54.623] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.stackUpgrade was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.stackUpgrade.nonStackableItems was corrected from null to its default, [minecraft:bundle, minecraft:shulker_box, minecraft:white_shulker_box, minecraft:orange_shulker_box, minecraft:magenta_shulker_box, minecraft:light_blue_shulker_box, minecraft:yellow_shulker_box, minecraft:lime_shulker_box, minecraft:pink_shulker_box, minecraft:gray_shulker_box, minecraft:light_gray_shulker_box, minecraft:cyan_shulker_box, minecraft:purple_shulker_box, minecraft:blue_shulker_box, minecraft:brown_shulker_box, minecraft:green_shulker_box, minecraft:red_shulker_box, minecraft:black_shulker_box]. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.smeltingUpgrade was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.smeltingUpgrade.smeltingSpeedMultiplier was corrected from null to its default, 1.0. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.smeltingUpgrade.fuelEfficiencyMultiplier was corrected from null to its default, 1.0. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.smokingUpgrade was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.smokingUpgrade.smeltingSpeedMultiplier was corrected from null to its default, 1.0. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.smokingUpgrade.fuelEfficiencyMultiplier was corrected from null to its default, 1.0. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.blastingUpgrade was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.blastingUpgrade.smeltingSpeedMultiplier was corrected from null to its default, 1.0. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.blastingUpgrade.fuelEfficiencyMultiplier was corrected from null to its default, 1.0. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.autoSmeltingUpgrade was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.autoSmeltingUpgrade.smeltingSpeedMultiplier was corrected from null to its default, 1.0. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.autoSmeltingUpgrade.fuelEfficiencyMultiplier was corrected from null to its default, 1.0. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.autoSmeltingUpgrade.inputFilterSlots was corrected from null to its default, 8. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.autoSmeltingUpgrade.inputFilterSlotsInRow was corrected from null to its default, 4. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.autoSmeltingUpgrade.fuelFilterSlots was corrected from null to its default, 4. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.autoSmeltingUpgrade.fuelFilterSlotsInRow was corrected from null to its default, 4. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.autoSmokingUpgrade was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.autoSmokingUpgrade.smeltingSpeedMultiplier was corrected from null to its default, 1.0. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.autoSmokingUpgrade.fuelEfficiencyMultiplier was corrected from null to its default, 1.0. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.autoSmokingUpgrade.inputFilterSlots was corrected from null to its default, 8. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.autoSmokingUpgrade.inputFilterSlotsInRow was corrected from null to its default, 4. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.autoSmokingUpgrade.fuelFilterSlots was corrected from null to its default, 4. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.autoSmokingUpgrade.fuelFilterSlotsInRow was corrected from null to its default, 4. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.autoBlastingUpgrade was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.autoBlastingUpgrade.smeltingSpeedMultiplier was corrected from null to its default, 1.0. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.autoBlastingUpgrade.fuelEfficiencyMultiplier was corrected from null to its default, 1.0. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.autoBlastingUpgrade.inputFilterSlots was corrected from null to its default, 8. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.autoBlastingUpgrade.inputFilterSlotsInRow was corrected from null to its default, 4. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.autoBlastingUpgrade.fuelFilterSlots was corrected from null to its default, 4. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.autoBlastingUpgrade.fuelFilterSlotsInRow was corrected from null to its default, 4. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.inceptionUpgrade was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.624] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.inceptionUpgrade.upgradesUseInventoriesOfBackpacksInBackpack was corrected from null to its default, true. 
-[29Nov2024 02:29:54.625] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.inceptionUpgrade.upgradesInContainedBackpacksAreFunctional was corrected from null to its default, true. 
-[29Nov2024 02:29:54.625] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.toolSwapperUpgrade was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.625] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.toolSwapperUpgrade.filterSlots was corrected from null to its default, 8. 
-[29Nov2024 02:29:54.625] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.toolSwapperUpgrade.slotsInRow was corrected from null to its default, 4. 
-[29Nov2024 02:29:54.625] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.tankUpgrade was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.625] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.tankUpgrade.capacityPerSlotRow was corrected from null to its default, 4000. 
-[29Nov2024 02:29:54.625] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.tankUpgrade.stackMultiplierRatio was corrected from null to its default, 1.0. 
-[29Nov2024 02:29:54.625] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.tankUpgrade.autoFillDrainContainerCooldown was corrected from null to its default, 20. 
-[29Nov2024 02:29:54.625] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.tankUpgrade.maxInputOutput was corrected from null to its default, 20. 
-[29Nov2024 02:29:54.625] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.tankUpgrade.energyPerSlotRow was corrected from null to its default, 10000. 
-[29Nov2024 02:29:54.625] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.pumpUpgrade was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.625] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.pumpUpgrade.filterSlots was corrected from null to its default, 4. 
-[29Nov2024 02:29:54.625] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.pumpUpgrade.maxInputOutput was corrected from null to its default, 20. 
-[29Nov2024 02:29:54.625] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.pumpUpgrade.stackMultiplierRatio was corrected from null to its default, 1.0. 
-[29Nov2024 02:29:54.625] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.xpPumpUpgrade was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.625] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.xpPumpUpgrade.mendingOn was corrected from null to its default, true. 
-[29Nov2024 02:29:54.625] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.xpPumpUpgrade.maxXpPointsPerMending was corrected from null to its default, 5. 
-[29Nov2024 02:29:54.625] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.entityBackpackAdditions was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.625] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.entityBackpackAdditions.chance was corrected from null to its default, 0.01. 
-[29Nov2024 02:29:54.625] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.entityBackpackAdditions.addLoot was corrected from null to its default, true. 
-[29Nov2024 02:29:54.625] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.entityBackpackAdditions.buffWithPotionEffects was corrected from null to its default, true. 
-[29Nov2024 02:29:54.625] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.entityBackpackAdditions.buffHealth was corrected from null to its default, true. 
-[29Nov2024 02:29:54.625] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.entityBackpackAdditions.equipWithArmor was corrected from null to its default, true. 
-[29Nov2024 02:29:54.626] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.entityBackpackAdditions.entityLootTableList was corrected from null to its default, [minecraft:creeper|minecraft:chests/desert_pyramid, minecraft:drowned|minecraft:chests/shipwreck_treasure, minecraft:enderman|minecraft:chests/end_city_treasure, minecraft:evoker|minecraft:chests/woodland_mansion, minecraft:husk|minecraft:chests/desert_pyramid, minecraft:piglin|minecraft:chests/bastion_bridge, minecraft:piglin_brute|minecraft:chests/bastion_treasure, minecraft:pillager|minecraft:chests/pillager_outpost, minecraft:skeleton|minecraft:chests/simple_dungeon, minecraft:stray|minecraft:chests/igloo_chest, minecraft:vex|minecraft:chests/woodland_mansion, minecraft:vindicator|minecraft:chests/woodland_mansion, minecraft:witch|minecraft:chests/buried_treasure, minecraft:wither_skeleton|minecraft:chests/nether_bridge, minecraft:zombie|minecraft:chests/simple_dungeon, minecraft:zombie_villager|minecraft:chests/village/village_armorer, minecraft:zombified_piglin|minecraft:chests/bastion_other]. 
-[29Nov2024 02:29:54.626] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.entityBackpackAdditions.discBlockList was corrected from null to its default, [botania:record_gaia_1, botania:record_gaia_2]. 
-[29Nov2024 02:29:54.626] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.entityBackpackAdditions.playJukebox was corrected from null to its default, true. 
-[29Nov2024 02:29:54.626] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.entityBackpackAdditions.dropToFakePlayers was corrected from null to its default, false. 
-[29Nov2024 02:29:54.626] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.entityBackpackAdditions.backpackDropChance was corrected from null to its default, 0.5. 
-[29Nov2024 02:29:54.626] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.entityBackpackAdditions.lootingChanceIncreasePerLevel was corrected from null to its default, 0.15. 
-[29Nov2024 02:29:54.626] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.nerfs was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.626] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.nerfs.tooManyBackpacksSlowness was corrected from null to its default, false. 
-[29Nov2024 02:29:54.626] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.nerfs.maxNumberOfBackpacks was corrected from null to its default, 3. 
-[29Nov2024 02:29:54.626] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.nerfs.slownessLevelsPerAdditionalBackpack was corrected from null to its default, 1.0. 
-[29Nov2024 02:29:54.626] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.nerfs.onlyWornBackpackTriggersUpgrades was corrected from null to its default, false. 
-[29Nov2024 02:29:54.626] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.maxUpgradesPerStorage was corrected from null to its default, [furnace_upgrades|1, stack_upgrades|3, jukebox_upgrade|1]. 
-[29Nov2024 02:29:54.626] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.itemFluidHandlerEnabled was corrected from null to its default, true. 
-[29Nov2024 02:29:54.626] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.allowOpeningOtherPlayerBackpacks was corrected from null to its default, true. 
-[29Nov2024 02:29:54.626] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.itemDisplayDisabled was corrected from null to its default, false. 
-[29Nov2024 02:29:54.626] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.tickDedupeLogicDisabled was corrected from null to its default, false. 
-[29Nov2024 02:29:54.626] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.canBePlacedInContainerItems was corrected from null to its default, false. 
-[29Nov2024 02:29:54.661] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file ./world/serverconfig/easy_villagers-server.toml is not correct. Correcting
-[29Nov2024 02:29:54.661] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key breeder was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.661] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key breeder.breeding_time was corrected from null to its default, 1200. 
-[29Nov2024 02:29:54.662] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key converter was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.662] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key converter.converting_time was corrected from null to its default, 6000. 
-[29Nov2024 02:29:54.662] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key farmer was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.662] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key farmer.farm_speed was corrected from null to its default, 10. 
-[29Nov2024 02:29:54.662] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key iron_farm was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.662] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key iron_farm.spawn_time was corrected from null to its default, 4800. 
-[29Nov2024 02:29:54.663] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key trader was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.663] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key trader.min_restock_time was corrected from null to its default, 1200. 
-[29Nov2024 02:29:54.663] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key trader.max_restock_time was corrected from null to its default, 3600. 
-[29Nov2024 02:29:54.663] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key auto_trader was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.663] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key auto_trader.min_restock_time was corrected from null to its default, 1200. 
-[29Nov2024 02:29:54.663] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key auto_trader.max_restock_time was corrected from null to its default, 3600. 
-[29Nov2024 02:29:54.663] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key auto_trader.trade_cooldown was corrected from null to its default, 20. 
-[29Nov2024 02:29:54.663] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key villager was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.665] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key villager.inventory_sounds was corrected from null to its default, true. 
-[29Nov2024 02:29:54.665] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key villager.sound_amount was corrected from null to its default, 20. 
-[29Nov2024 02:29:54.665] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key villager.trade_cycling was corrected from null to its default, true. 
-[29Nov2024 02:29:54.665] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key villager.universal_reputation was corrected from null to its default, true. 
-[29Nov2024 02:29:54.666] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key incubator was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.666] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key incubator.speed was corrected from null to its default, 2. 
-[29Nov2024 02:29:54.671] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file ./world/serverconfig/forge-server.toml is not correct. Correcting
-[29Nov2024 02:29:54.672] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server was corrected from null to its default, SimpleCommentedConfig:{}. 
-[29Nov2024 02:29:54.672] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringBlockEntities was corrected from null to its default, false. 
-[29Nov2024 02:29:54.672] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringEntities was corrected from null to its default, false. 
-[29Nov2024 02:29:54.672] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.fullBoundingBoxLadders was corrected from null to its default, false. 
-[29Nov2024 02:29:54.673] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.zombieBaseSummonChance was corrected from null to its default, 0.1. 
-[29Nov2024 02:29:54.673] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.zombieBabyChance was corrected from null to its default, 0.05. 
-[29Nov2024 02:29:54.673] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.permissionHandler was corrected from null to its default, forge:default_handler. 
-[29Nov2024 02:29:54.673] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advertiseDedicatedServerToLan was corrected from null to its default, true. 
-[29Nov2024 02:29:54.675] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file ./world/serverconfig/securitycraft-server.toml is not correct. Correcting
-[29Nov2024 02:29:54.675] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key codebreaker_chance was corrected from null to its default, 0.33. 
-[29Nov2024 02:29:54.676] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key allowAdminTool was corrected from null to its default, true. 
-[29Nov2024 02:29:54.677] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key shouldSpawnFire was corrected from null to its default, true. 
-[29Nov2024 02:29:54.677] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key ableToBreakMines was corrected from null to its default, true. 
-[29Nov2024 02:29:54.678] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key smallerMineExplosion was corrected from null to its default, false. 
-[29Nov2024 02:29:54.679] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mineExplodesWhenInCreative was corrected from null to its default, true. 
-[29Nov2024 02:29:54.680] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mineExplosionsBreakBlocks was corrected from null to its default, true. 
-[29Nov2024 02:29:54.682] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key laserBlockRange was corrected from null to its default, 5. 
-[29Nov2024 02:29:54.685] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key inventoryScannerRange was corrected from null to its default, 2. 
-[29Nov2024 02:29:54.686] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key maxAlarmRange was corrected from null to its default, 100. 
-[29Nov2024 02:29:54.686] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key allowBlockClaim was corrected from null to its default, false. 
-[29Nov2024 02:29:54.687] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key reinforced_block_tint was corrected from null to its default, true. 
-[29Nov2024 02:29:54.688] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key force_reinforced_block_tint was corrected from null to its default, false. 
-[29Nov2024 02:29:54.689] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key retinalScannerFace was corrected from null to its default, true. 
-[29Nov2024 02:29:54.691] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key enable_team_ownership was corrected from null to its default, false. 
-[29Nov2024 02:29:54.701] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key disable_thanks_message was corrected from null to its default, false. 
-[29Nov2024 02:29:54.702] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key trick_scanners_with_player_heads was corrected from null to its default, false. 
-[29Nov2024 02:29:54.702] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key prevent_reinforced_floor_glitching was corrected from null to its default, false. 
-[29Nov2024 02:29:54.703] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key taser_damage was corrected from null to its default, 1.0. 
-[29Nov2024 02:29:54.704] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key powered_taser_damage was corrected from null to its default, 2.0. 
-[29Nov2024 02:29:54.705] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key taser_effects was corrected from null to its default, [minecraft:weakness|200|2, minecraft:nausea|200|2, minecraft:slowness|200|2]. 
-[29Nov2024 02:29:54.706] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key powered_taser_effects was corrected from null to its default, [minecraft:weakness|400|5, minecraft:nausea|400|5, minecraft:slowness|400|5]. 
-[29Nov2024 02:29:54.707] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key laser_damage was corrected from null to its default, 10.0. 
-[29Nov2024 02:29:54.707] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key incorrectPasscodeDamage was corrected from null to its default, 4. 
-[29Nov2024 02:29:54.708] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key sentry_bullet_damage was corrected from null to its default, 2. 
-[29Nov2024 02:29:54.709] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key allow_camera_night_vision was corrected from null to its default, true. 
-[29Nov2024 02:29:54.710] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key passcode_check_cooldown was corrected from null to its default, 250. 
-[29Nov2024 02:29:54.711] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key passcode_spam_log_warning_enabled was corrected from null to its default, true. 
-[29Nov2024 02:29:54.712] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key passcode_spam_log_warning was corrected from null to its default, Player "%1$s" tried to enter a passcode into "%2$s" at position [%3$s] too quickly!. 
-[29Nov2024 02:29:54.714] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key sentry_attackable_entities_allowlist was corrected from null to its default, []. 
-[29Nov2024 02:29:54.715] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key sentry_attackable_entities_denylist was corrected from null to its default, []. 
-[29Nov2024 02:29:54.932] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
-[29Nov2024 02:29:54.975] [Server thread/INFO] [Arclight/]: 注册了 0 个新的世界类型
-[29Nov2024 02:29:55.489] [Server thread/INFO] [Minecraft/]: -------- World Settings For [world] --------
-[29Nov2024 02:29:55.503] [Server thread/INFO] [Minecraft/]: Simulation Distance: 10
-[29Nov2024 02:29:55.504] [Server thread/INFO] [Minecraft/]: Experience Merge Radius: 3.0
-[29Nov2024 02:29:55.504] [Server thread/INFO] [Minecraft/]: Mob Spawn Range: 6
-[29Nov2024 02:29:55.504] [Server thread/INFO] [Minecraft/]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
-[29Nov2024 02:29:55.504] [Server thread/INFO] [Minecraft/]: Zombie Aggressive Towards Villager: true
-[29Nov2024 02:29:55.505] [Server thread/INFO] [Minecraft/]: Allow Zombie Pigmen to spawn from portal blocks: true
-[29Nov2024 02:29:55.505] [Server thread/INFO] [Minecraft/]: Cactus Growth Modifier: 100%
-[29Nov2024 02:29:55.505] [Server thread/INFO] [Minecraft/]: Cane Growth Modifier: 100%
-[29Nov2024 02:29:55.506] [Server thread/INFO] [Minecraft/]: Melon Growth Modifier: 100%
-[29Nov2024 02:29:55.506] [Server thread/INFO] [Minecraft/]: Mushroom Growth Modifier: 100%
-[29Nov2024 02:29:55.506] [Server thread/INFO] [Minecraft/]: Pumpkin Growth Modifier: 100%
-[29Nov2024 02:29:55.507] [Server thread/INFO] [Minecraft/]: Sapling Growth Modifier: 100%
-[29Nov2024 02:29:55.507] [Server thread/INFO] [Minecraft/]: Beetroot Growth Modifier: 100%
-[29Nov2024 02:29:55.507] [Server thread/INFO] [Minecraft/]: Carrot Growth Modifier: 100%
-[29Nov2024 02:29:55.507] [Server thread/INFO] [Minecraft/]: Potato Growth Modifier: 100%
-[29Nov2024 02:29:55.508] [Server thread/INFO] [Minecraft/]: Wheat Growth Modifier: 100%
-[29Nov2024 02:29:55.508] [Server thread/INFO] [Minecraft/]: NetherWart Growth Modifier: 100%
-[29Nov2024 02:29:55.508] [Server thread/INFO] [Minecraft/]: Vine Growth Modifier: 100%
-[29Nov2024 02:29:55.509] [Server thread/INFO] [Minecraft/]: Cocoa Growth Modifier: 100%
-[29Nov2024 02:29:55.509] [Server thread/INFO] [Minecraft/]: Bamboo Growth Modifier: 100%
-[29Nov2024 02:29:55.509] [Server thread/INFO] [Minecraft/]: SweetBerry Growth Modifier: 100%
-[29Nov2024 02:29:55.509] [Server thread/INFO] [Minecraft/]: Kelp Growth Modifier: 100%
-[29Nov2024 02:29:55.510] [Server thread/INFO] [Minecraft/]: TwistingVines Growth Modifier: 100%
-[29Nov2024 02:29:55.510] [Server thread/INFO] [Minecraft/]: WeepingVines Growth Modifier: 100%
-[29Nov2024 02:29:55.510] [Server thread/INFO] [Minecraft/]: CaveVines Growth Modifier: 100%
-[29Nov2024 02:29:55.511] [Server thread/INFO] [Minecraft/]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true / Isa false
-[29Nov2024 02:29:55.511] [Server thread/INFO] [Minecraft/]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Di 128 / Other 64
-[29Nov2024 02:29:55.511] [Server thread/INFO] [Minecraft/]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1 Hopper Can Load Chunks: false
-[29Nov2024 02:29:55.512] [Server thread/INFO] [Minecraft/]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Nether: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
-[29Nov2024 02:29:55.512] [Server thread/INFO] [Minecraft/]: Max TNT Explosions: 100
-[29Nov2024 02:29:55.513] [Server thread/INFO] [Minecraft/]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[29Nov2024 02:29:55.513] [Server thread/INFO] [Minecraft/]: Item Merge Radius: 2.5
-[29Nov2024 02:29:55.513] [Server thread/INFO] [Minecraft/]: Item Despawn Rate: 6000
-[29Nov2024 02:29:55.513] [Server thread/INFO] [Minecraft/]: Nerfing mobs spawned from spawners: false
-[29Nov2024 02:29:55.514] [Server thread/INFO] [Minecraft/]: View Distance: 10
-[29Nov2024 02:30:12.786] [Server thread/INFO] [Minecraft/]: -------- World Settings For [world/DIM-1] --------
-[29Nov2024 02:30:12.786] [Server thread/INFO] [Minecraft/]: Simulation Distance: 10
-[29Nov2024 02:30:12.786] [Server thread/INFO] [Minecraft/]: Experience Merge Radius: 3.0
-[29Nov2024 02:30:12.786] [Server thread/INFO] [Minecraft/]: Mob Spawn Range: 6
-[29Nov2024 02:30:12.786] [Server thread/INFO] [Minecraft/]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
-[29Nov2024 02:30:12.786] [Server thread/INFO] [Minecraft/]: Zombie Aggressive Towards Villager: true
-[29Nov2024 02:30:12.786] [Server thread/INFO] [Minecraft/]: Allow Zombie Pigmen to spawn from portal blocks: true
-[29Nov2024 02:30:12.786] [Server thread/INFO] [Minecraft/]: Cactus Growth Modifier: 100%
-[29Nov2024 02:30:12.786] [Server thread/INFO] [Minecraft/]: Cane Growth Modifier: 100%
-[29Nov2024 02:30:12.786] [Server thread/INFO] [Minecraft/]: Melon Growth Modifier: 100%
-[29Nov2024 02:30:12.786] [Server thread/INFO] [Minecraft/]: Mushroom Growth Modifier: 100%
-[29Nov2024 02:30:12.786] [Server thread/INFO] [Minecraft/]: Pumpkin Growth Modifier: 100%
-[29Nov2024 02:30:12.786] [Server thread/INFO] [Minecraft/]: Sapling Growth Modifier: 100%
-[29Nov2024 02:30:12.786] [Server thread/INFO] [Minecraft/]: Beetroot Growth Modifier: 100%
-[29Nov2024 02:30:12.786] [Server thread/INFO] [Minecraft/]: Carrot Growth Modifier: 100%
-[29Nov2024 02:30:12.786] [Server thread/INFO] [Minecraft/]: Potato Growth Modifier: 100%
-[29Nov2024 02:30:12.786] [Server thread/INFO] [Minecraft/]: Wheat Growth Modifier: 100%
-[29Nov2024 02:30:12.786] [Server thread/INFO] [Minecraft/]: NetherWart Growth Modifier: 100%
-[29Nov2024 02:30:12.786] [Server thread/INFO] [Minecraft/]: Vine Growth Modifier: 100%
-[29Nov2024 02:30:12.786] [Server thread/INFO] [Minecraft/]: Cocoa Growth Modifier: 100%
-[29Nov2024 02:30:12.786] [Server thread/INFO] [Minecraft/]: Bamboo Growth Modifier: 100%
-[29Nov2024 02:30:12.786] [Server thread/INFO] [Minecraft/]: SweetBerry Growth Modifier: 100%
-[29Nov2024 02:30:12.786] [Server thread/INFO] [Minecraft/]: Kelp Growth Modifier: 100%
-[29Nov2024 02:30:12.786] [Server thread/INFO] [Minecraft/]: TwistingVines Growth Modifier: 100%
-[29Nov2024 02:30:12.787] [Server thread/INFO] [Minecraft/]: WeepingVines Growth Modifier: 100%
-[29Nov2024 02:30:12.787] [Server thread/INFO] [Minecraft/]: CaveVines Growth Modifier: 100%
-[29Nov2024 02:30:12.787] [Server thread/INFO] [Minecraft/]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true / Isa false
-[29Nov2024 02:30:12.787] [Server thread/INFO] [Minecraft/]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Di 128 / Other 64
-[29Nov2024 02:30:12.787] [Server thread/INFO] [Minecraft/]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1 Hopper Can Load Chunks: false
-[29Nov2024 02:30:12.787] [Server thread/INFO] [Minecraft/]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Nether: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
-[29Nov2024 02:30:12.787] [Server thread/INFO] [Minecraft/]: Max TNT Explosions: 100
-[29Nov2024 02:30:12.787] [Server thread/INFO] [Minecraft/]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[29Nov2024 02:30:12.787] [Server thread/INFO] [Minecraft/]: Item Merge Radius: 2.5
-[29Nov2024 02:30:12.787] [Server thread/INFO] [Minecraft/]: Item Despawn Rate: 6000
-[29Nov2024 02:30:12.787] [Server thread/INFO] [Minecraft/]: Nerfing mobs spawned from spawners: false
-[29Nov2024 02:30:12.787] [Server thread/INFO] [Minecraft/]: View Distance: 10
-[29Nov2024 02:30:12.820] [Server thread/INFO] [Minecraft/]: -------- World Settings For [world/DIM1] --------
-[29Nov2024 02:30:12.820] [Server thread/INFO] [Minecraft/]: Simulation Distance: 10
-[29Nov2024 02:30:12.820] [Server thread/INFO] [Minecraft/]: Experience Merge Radius: 3.0
-[29Nov2024 02:30:12.820] [Server thread/INFO] [Minecraft/]: Mob Spawn Range: 6
-[29Nov2024 02:30:12.820] [Server thread/INFO] [Minecraft/]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
-[29Nov2024 02:30:12.820] [Server thread/INFO] [Minecraft/]: Zombie Aggressive Towards Villager: true
-[29Nov2024 02:30:12.820] [Server thread/INFO] [Minecraft/]: Allow Zombie Pigmen to spawn from portal blocks: true
-[29Nov2024 02:30:12.820] [Server thread/INFO] [Minecraft/]: Cactus Growth Modifier: 100%
-[29Nov2024 02:30:12.820] [Server thread/INFO] [Minecraft/]: Cane Growth Modifier: 100%
-[29Nov2024 02:30:12.820] [Server thread/INFO] [Minecraft/]: Melon Growth Modifier: 100%
-[29Nov2024 02:30:12.820] [Server thread/INFO] [Minecraft/]: Mushroom Growth Modifier: 100%
-[29Nov2024 02:30:12.820] [Server thread/INFO] [Minecraft/]: Pumpkin Growth Modifier: 100%
-[29Nov2024 02:30:12.820] [Server thread/INFO] [Minecraft/]: Sapling Growth Modifier: 100%
-[29Nov2024 02:30:12.820] [Server thread/INFO] [Minecraft/]: Beetroot Growth Modifier: 100%
-[29Nov2024 02:30:12.820] [Server thread/INFO] [Minecraft/]: Carrot Growth Modifier: 100%
-[29Nov2024 02:30:12.820] [Server thread/INFO] [Minecraft/]: Potato Growth Modifier: 100%
-[29Nov2024 02:30:12.820] [Server thread/INFO] [Minecraft/]: Wheat Growth Modifier: 100%
-[29Nov2024 02:30:12.820] [Server thread/INFO] [Minecraft/]: NetherWart Growth Modifier: 100%
-[29Nov2024 02:30:12.820] [Server thread/INFO] [Minecraft/]: Vine Growth Modifier: 100%
-[29Nov2024 02:30:12.820] [Server thread/INFO] [Minecraft/]: Cocoa Growth Modifier: 100%
-[29Nov2024 02:30:12.820] [Server thread/INFO] [Minecraft/]: Bamboo Growth Modifier: 100%
-[29Nov2024 02:30:12.820] [Server thread/INFO] [Minecraft/]: SweetBerry Growth Modifier: 100%
-[29Nov2024 02:30:12.820] [Server thread/INFO] [Minecraft/]: Kelp Growth Modifier: 100%
-[29Nov2024 02:30:12.820] [Server thread/INFO] [Minecraft/]: TwistingVines Growth Modifier: 100%
-[29Nov2024 02:30:12.820] [Server thread/INFO] [Minecraft/]: WeepingVines Growth Modifier: 100%
-[29Nov2024 02:30:12.820] [Server thread/INFO] [Minecraft/]: CaveVines Growth Modifier: 100%
-[29Nov2024 02:30:12.820] [Server thread/INFO] [Minecraft/]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true / Isa false
-[29Nov2024 02:30:12.820] [Server thread/INFO] [Minecraft/]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Di 128 / Other 64
-[29Nov2024 02:30:12.820] [Server thread/INFO] [Minecraft/]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1 Hopper Can Load Chunks: false
-[29Nov2024 02:30:12.821] [Server thread/INFO] [Minecraft/]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Nether: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
-[29Nov2024 02:30:12.821] [Server thread/INFO] [Minecraft/]: Max TNT Explosions: 100
-[29Nov2024 02:30:12.821] [Server thread/INFO] [Minecraft/]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[29Nov2024 02:30:12.821] [Server thread/INFO] [Minecraft/]: Item Merge Radius: 2.5
-[29Nov2024 02:30:12.821] [Server thread/INFO] [Minecraft/]: Item Despawn Rate: 6000
-[29Nov2024 02:30:12.821] [Server thread/INFO] [Minecraft/]: Nerfing mobs spawned from spawners: false
-[29Nov2024 02:30:12.821] [Server thread/INFO] [Minecraft/]: View Distance: 10
-[29Nov2024 02:30:12.842] [Server thread/INFO] [Minecraft/]: Server permissions file permissions.yml is empty, ignoring it
-[29Nov2024 02:30:12.849] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[29Nov2024 02:30:13.734] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[29Nov2024 02:30:13.735] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[29Nov2024 02:30:13.894] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[29Nov2024 02:30:14.351] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[29Nov2024 02:30:15.054] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[29Nov2024 02:30:15.358] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[29Nov2024 02:30:16.007] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[29Nov2024 02:30:16.355] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[29Nov2024 02:30:16.861] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 1%
-[29Nov2024 02:30:17.360] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 1%
-[29Nov2024 02:30:17.874] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
-[29Nov2024 02:30:18.384] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
-[29Nov2024 02:30:18.878] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 3%
-[29Nov2024 02:30:19.359] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 3%
-[29Nov2024 02:30:19.857] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 4%
-[29Nov2024 02:30:20.353] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 5%
-[29Nov2024 02:30:20.896] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 6%
-[29Nov2024 02:30:21.361] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 6%
-[29Nov2024 02:30:21.860] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 7%
-[29Nov2024 02:30:22.351] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 9%
-[29Nov2024 02:30:22.871] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 9%
-[29Nov2024 02:30:23.351] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 10%
-[29Nov2024 02:30:23.854] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 11%
-[29Nov2024 02:30:24.350] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 11%
-[29Nov2024 02:30:24.912] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 12%
-[29Nov2024 02:30:25.365] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 13%
-[29Nov2024 02:30:26.041] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 15%
-[29Nov2024 02:30:26.367] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 15%
-[29Nov2024 02:30:26.870] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 15%
-[29Nov2024 02:30:27.359] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 16%
-[29Nov2024 02:30:27.882] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 17%
-[29Nov2024 02:30:28.355] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 18%
-[29Nov2024 02:30:28.881] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 19%
-[29Nov2024 02:30:29.371] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 20%
-[29Nov2024 02:30:29.861] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 22%
-[29Nov2024 02:30:30.349] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 23%
-[29Nov2024 02:30:30.865] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 23%
-[29Nov2024 02:30:31.368] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 24%
-[29Nov2024 02:30:31.906] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 25%
-[29Nov2024 02:30:32.360] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 26%
-[29Nov2024 02:30:32.855] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 27%
-[29Nov2024 02:30:33.366] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 28%
-[29Nov2024 02:30:33.873] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 29%
-[29Nov2024 02:30:34.388] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 31%
-[29Nov2024 02:30:34.850] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 31%
-[29Nov2024 02:30:35.350] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 32%
-[29Nov2024 02:30:35.858] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 33%
-[29Nov2024 02:30:36.368] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 33%
-[29Nov2024 02:30:36.888] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 34%
-[29Nov2024 02:30:37.350] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 35%
-[29Nov2024 02:30:37.863] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 37%
-[29Nov2024 02:30:38.349] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 39%
-[29Nov2024 02:30:38.864] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 40%
-[29Nov2024 02:30:39.359] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 42%
-[29Nov2024 02:30:39.858] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 43%
-[29Nov2024 02:30:40.382] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 43%
-[29Nov2024 02:30:40.874] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 44%
-[29Nov2024 02:30:41.365] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 44%
-[29Nov2024 02:30:41.924] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 46%
-[29Nov2024 02:30:42.370] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 47%
-[29Nov2024 02:30:42.881] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 49%
-[29Nov2024 02:30:43.351] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 50%
-[29Nov2024 02:30:43.854] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 52%
-[29Nov2024 02:30:44.351] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 54%
-[29Nov2024 02:30:44.866] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 54%
-[29Nov2024 02:30:45.378] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 55%
-[29Nov2024 02:30:45.851] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 56%
-[29Nov2024 02:30:46.356] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 57%
-[29Nov2024 02:30:46.850] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 57%
-[29Nov2024 02:30:47.350] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 58%
-[29Nov2024 02:30:47.858] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 60%
-[29Nov2024 02:30:48.352] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 62%
-[29Nov2024 02:30:48.899] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 64%
-[29Nov2024 02:30:49.355] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 65%
-[29Nov2024 02:30:49.869] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 66%
-[29Nov2024 02:30:50.355] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 68%
-[29Nov2024 02:30:50.861] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 69%
-[29Nov2024 02:30:51.352] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 70%
-[29Nov2024 02:30:51.859] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 70%
-[29Nov2024 02:30:52.355] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 71%
-[29Nov2024 02:30:52.852] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 73%
-[29Nov2024 02:30:53.358] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 73%
-[29Nov2024 02:30:53.853] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 75%
-[29Nov2024 02:30:54.361] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 76%
-[29Nov2024 02:30:54.861] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 78%
-[29Nov2024 02:30:55.368] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 79%
-[29Nov2024 02:30:55.867] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 81%
-[29Nov2024 02:30:56.367] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 83%
-[29Nov2024 02:30:56.855] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 83%
-[29Nov2024 02:30:57.355] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 84%
-[29Nov2024 02:30:57.852] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 85%
-[29Nov2024 02:30:58.407] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 86%
-[29Nov2024 02:30:58.860] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 87%
-[29Nov2024 02:30:59.352] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 89%
-[29Nov2024 02:30:59.906] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 90%
-[29Nov2024 02:31:00.351] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 91%
-[29Nov2024 02:31:00.870] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 93%
-[29Nov2024 02:31:01.350] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 94%
-[29Nov2024 02:31:01.856] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 96%
-[29Nov2024 02:31:02.358] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 97%
-[29Nov2024 02:31:02.932] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 99%
-[29Nov2024 02:31:03.138] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 50289 ms
-[29Nov2024 02:31:03.138] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (68.519s)! For help, type "help"
-[29Nov2024 02:31:03.177] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
-[29Nov2024 02:31:03.177] [Server thread/INFO] [Arclight/]: Forwarding forge permission[forge:default_handler] to bukkit
-[29Nov2024 02:31:06.342] [Server thread/INFO] [com.github.alexthe666.alexsmobs.AlexsMobs/]: Found Pupfish chunk at 687 ~ 1152 after 38 tries
-[29Nov2024 02:43:50.554] [User Authenticator #1/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: UUID of player Sicxtino is b202b854-eef7-3a5c-8add-c7111e30f7a1
-[29Nov2024 02:43:51.936] [Server thread/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: com.mojang.authlib.GameProfile@607b794a[id=b202b854-eef7-3a5c-8add-c7111e30f7a1,name=Sicxtino,properties={},legacy=false] (/127.171.113.235:34769) lost connection: Disconnected
-[29Nov2024 02:50:37.533] [User Authenticator #2/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: UUID of player Sicxtino is b202b854-eef7-3a5c-8add-c7111e30f7a1
-[29Nov2024 02:50:40.940] [Server thread/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class net.minecraft.world.entity.player.Player from class tschipp.carryon.common.carry.CarryOnDataManager
-[29Nov2024 02:50:40.991] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Sicxtino[/127.171.113.235:48535] logged in with entity id 604 at (-6.5, 67.0, -0.5)
-[29Nov2024 02:50:41.049] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Sicxtino joined the game
-[29Nov2024 02:50:51.587] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Sicxtino lost connection: Disconnected
-[29Nov2024 02:50:51.605] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Sicxtino left the game
-[29Nov2024 02:53:34.148] [User Authenticator #3/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: UUID of player Sicxtino is b202b854-eef7-3a5c-8add-c7111e30f7a1
-[29Nov2024 02:53:38.046] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Sicxtino[/127.171.113.235:53963] logged in with entity id 763 at (-7.603659517180012, 68.0, 0.3578129935606723)
-[29Nov2024 02:53:38.056] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Sicxtino joined the game
-[29Nov2024 02:54:25.585] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Sicxtino lost connection: Disconnected
-[29Nov2024 02:54:25.588] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Sicxtino left the game
+[01:25:56] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[01:25:57] [ServerMain/INFO]: No existing world data, creating new world
+[01:25:58] [ServerMain/INFO]: Loaded 1373 recipes
+[01:25:58] [ServerMain/INFO]: Loaded 1484 advancements
+[01:25:58] [Server thread/INFO]: Starting minecraft server version 1.21.5
+[01:25:58] [Server thread/INFO]: Loading properties
+[01:25:58] [Server thread/INFO]: Default game type: SURVIVAL
+[01:25:58] [Server thread/INFO]: Generating keypair
+[01:25:58] [Server thread/INFO]: Starting Minecraft server on *:25565
+[01:25:58] [Server thread/INFO]: Using epoll channel type
+[01:25:58] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[01:25:58] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[01:25:58] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[01:25:58] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[01:25:58] [Server thread/INFO]: Preparing level "world"
+[01:26:03] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[01:26:03] [Worker-Main-3/INFO]: Preparing spawn area: 2%
+[01:26:04] [Worker-Main-3/INFO]: Preparing spawn area: 2%
+[01:26:04] [Worker-Main-3/INFO]: Preparing spawn area: 2%
+[01:26:05] [Worker-Main-2/INFO]: Preparing spawn area: 2%
+[01:26:05] [Worker-Main-3/INFO]: Preparing spawn area: 2%
+[01:26:06] [Worker-Main-1/INFO]: Preparing spawn area: 18%
+[01:26:06] [Worker-Main-2/INFO]: Preparing spawn area: 18%
+[01:26:07] [Worker-Main-3/INFO]: Preparing spawn area: 51%
+[01:26:07] [Worker-Main-1/INFO]: Preparing spawn area: 51%
+[01:26:08] [Server thread/INFO]: Time elapsed: 4478 ms
+[01:26:08] [Server thread/INFO]: Done (9.646s)! For help, type "help"
+[01:26:12] [Server thread/INFO]: Sicxtino[/127.41.185.52:51647] logged in with entity id 7 at (206.5, 69.0, 130.5)
+[01:26:12] [Server thread/INFO]: Sicxtino joined the game
+[01:26:22] [Server thread/INFO]: pichacorta1234[/127.172.227.174:51281] logged in with entity id 277 at (216.5, 67.0, 134.5)
+[01:26:22] [Server thread/INFO]: pichacorta1234 joined the game
+[01:26:41] [Server thread/INFO]: Made Sicxtino a server operator
+[01:26:51] [Server thread/INFO]: [Sicxtino: Set own game mode to Adventure Mode]
+[01:26:51] [Server thread/INFO]: [Sicxtino: Set pichacorta1234's game mode to Adventure Mode]
+[01:27:06] [Server thread/INFO]: [Sicxtino: Gamerule naturalRegeneration is now set to: false]
+[01:27:27] [Server thread/INFO]: [Sicxtino: Set own game mode to Survival Mode]
+[01:27:27] [Server thread/INFO]: [Sicxtino: Set pichacorta1234's game mode to Survival Mode]
+[01:27:32] [Server thread/INFO]: [Sicxtino: Set the time to 0]
+[01:28:09] [Server thread/INFO]: [Sicxtino: Teleported pichacorta1234 to 213.500000, 100.000000, 162.500000]
+[01:28:11] [Server thread/INFO]: pichacorta1234 fell from a high place
+[01:28:19] [Server thread/INFO]: [Sicxtino: Teleported pichacorta1234 to 213.500000, 80.000000, 162.500000]
+[01:28:29] [Server thread/INFO]: [Sicxtino: Gamerule naturalRegeneration is now set to: true]
+[01:28:33] [Server thread/INFO]: [Sicxtino: The difficulty has been set to Peaceful]
+[01:29:02] [Server thread/INFO]: [Sicxtino: Created new objective [vida]]
+[01:29:09] [Server thread/INFO]: [Sicxtino: Set display slot list to show objective vida]
+[01:29:18] [Server thread/INFO]: [Sicxtino: Teleported pichacorta1234 to 213.500000, 80.000000, 162.500000]
+[01:29:30] [Server thread/INFO]: [Sicxtino: Set own game mode to Creative Mode]
+[01:29:33] [Server thread/INFO]: [Sicxtino: Set own game mode to Survival Mode]
+[01:29:43] [Server thread/INFO]: [Sicxtino: Gamerule naturalRegeneration is now set to: false]
+[01:29:53] [Server thread/INFO]: [Sicxtino: The difficulty has been set to Hard]
+[01:31:37] [Server thread/INFO]: pichacorta1234 has made the advancement [Stone Age]
+[01:31:37] [Server thread/INFO]: Sicxtino has made the advancement [Stone Age]
+[01:32:00] [Server thread/INFO]: [Not Secure] <Sicxtino> 1 21 1
+[01:32:02] [Server thread/INFO]: [Not Secure] <Sicxtino> 1 21 4
+[01:32:03] [Server thread/INFO]: [Not Secure] <Sicxtino> 1 21 5
+[01:32:07] [Server thread/INFO]: pichacorta1234 has made the advancement [Getting an Upgrade]
+[01:32:15] [Server thread/INFO]: Sicxtino has made the advancement [Getting an Upgrade]
+[01:39:03] [Server thread/INFO]: Sicxtino has made the advancement [Sweet Dreams]
+[01:39:23] [Server thread/INFO]: pichacorta1234 has made the advancement [Sweet Dreams]
